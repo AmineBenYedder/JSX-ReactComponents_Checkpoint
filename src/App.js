@@ -7,11 +7,16 @@ import Description from './Description';
 import Image from './Image';
 import Name from './Name';
 import Price from './Price';
+const nom = "Amine";
+
 
 
 function App() {
   return (
 <>
+<div>
+<p>Hello, {nom ? nom :"there"} !</p>
+</div>
 
 <Name/>
 <Navbar className="bg-body-tertiary">
@@ -26,6 +31,7 @@ function App() {
       </Container>
     </Navbar>
     
+
     <Card  className="polaroid" style={{ width: '80%' }}>
    
       <Image/>
@@ -44,6 +50,7 @@ function App() {
         <Card.Link href="#"></Card.Link>
       </Card.Body>
     </Card>
+    
     <Price />
     
 </>
